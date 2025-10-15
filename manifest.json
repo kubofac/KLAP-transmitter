@@ -1,0 +1,22 @@
+{
+  "name": K-LAP ｸﾎﾞﾌｧｸ transmitter",
+  "short_name": "K-LAP ｸﾎﾞﾌｧｸ transmitter",
+  "description": "K-LAP 用送信アプリ",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "icons": [
+    {
+      "src": "/icon-192t.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512t.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

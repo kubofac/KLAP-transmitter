@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>K-LAP transmitter</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="manifest" href="/manifest.json">
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        console.log('Service Worker registered! Scope:', registration.scope);
+      })
+      .catch(err => {
+        console.log('Service Worker registration failed:', err);
+      });
+  });
+}
+</script>
+
+
+
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #log { margin-top: 20px; border: 1px solid #ccc; padding: 10px; max-height: 200px; overflow-y: scroll; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>K-LAP transmitter</h1>
+    <p>Click the "Connect" button and select your device.</p>
+    
+    <button id="connectButton">🔌 Connect</button>
+    <p id="statusMessage" class="error">Not connected</p>
+    
+    <hr>
+    
+    <h2>send message</h2>
+    <input type="text" id="messageInput" placeholder="Enter the message you want to send..." style="width: 80%; padding: 8px;">
+    <button id="sendButton" disabled>🚀 send</button>
+    
+    <hr>
+    
+    <h2>log</h2>
+    <div id="log"></div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
