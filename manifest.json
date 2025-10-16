@@ -1,5 +1,5 @@
 {
-  "name": K-LAP ｸﾎﾞﾌｧｸ transmitter",
+  "name": "K-LAP ｸﾎﾞﾌｧｸ transmitter",
   "short_name": "K-LAP ｸﾎﾞﾌｧｸ transmitter",
   "description": "K-LAP 用送信アプリ",
   "start_url": "/index.html",
@@ -19,4 +19,5 @@
       "type": "image/png"
     }
   ]
+
 }
